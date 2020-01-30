@@ -14,3 +14,13 @@ let myNum = 23;
 //myString = "something else";
 
 console.log(myNum);
+
+//Homework due 2/3/2020 lines 19-26
+const hwString = "words";
+const hwNumber = 524;
+const hwBoo = true;
+
+let hwLetNum = 626;
+
+hwLetNum = 867; //let allows me to change hwLetNum's assigned value
+hwString = "nope"; //const does NOT allow me to change the variable's value
