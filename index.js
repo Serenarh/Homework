@@ -1,17 +1,11 @@
-console.log(4 === 4);
-console.log("Hello, world" === "Hello, world");
-
-let x = false;
-let y = x;
-console.log(x === y);
-x = !x;
-console.log(x === y);
-
-console.log([1, 2, "c"] === [1, 2, "c"]);
-console.log({} === {});
-
-y = { id: 1 };
-x = y;
-console.log(x === y);
-y.id += 1;
-console.log(x.id === y.id);
+for (let i = 1; i <= 100; i++) {
+  if (i % 15 === 0) {
+    console.log("FizzBuzz!");
+  } else if (i % 3 === 0) {
+    console.log("Fizz!");
+  } else if (i % 5 === 0) {
+    console.log("Buzz!");
+  } else {
+    console.log(i);
+  }
+}
