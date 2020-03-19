@@ -1,15 +1,30 @@
-const name1 = prompt("What is your name") || "Name is blank";
-console.log(name1);
-console.log(typeof name1);
-console.log(Number(name1));
+// TODO: Create a 'greeting' function and send it 2 STRINGS. One for the time of day (e.g. 'morning') and then a 'name.'
 
-///'name' will be a STRING but it might be blank.
-let name = prompt("What is your name?");
-//If 'name' is blank, then '!' will convert to Boolean(NOT FALSE, ie true)  '!' is a UNARY operator
-//While 'name is not blank, then '!' will convert to a Boolean(NOT TRUE, ie false)
-while (!name) {
-  //while(name==="")
-  name = prompt("What is your name?");
-}
+const greeting = function() {
+  console.log(`${arguments["0"]} ${arguments["1"]}`);
+};
 
-console.log(name);
+greeting("Morning", "Louisa");
+
+// TODO: Update 👆🏽by using `prompt` to get the user's name.
+
+const greeting2 = function() {
+  console.log(`${arguments["0"]}`);
+};
+
+let who = prompt("What is your name?");
+
+greeting2("Morning " + who);
+
+// TODO: Create an OBJECT 'greeterDB' that will 🏠 the 'data' as per 👆🏽.
+
+const greeterDB = {};
+
+greeterDB.greeting = "Morning";
+greeterDB.who = prompt("What is your name?");
+
+const greeterDB2 = function() {
+  console.log(`${arguments["0"]}`);
+};
+
+greeterDB2(greeterDB.greeting + " " + greeterDB.who);
