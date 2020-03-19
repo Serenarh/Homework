@@ -1,7 +1,9 @@
-// TODO: Create a 'greeting' function and send it 2 STRINGS. One for the time of day (e.g. 'morning') and then a 'name.'
+// TODO: Update 👆🏽by using `prompt` to get the user's name.
 
-const greeting = function() {
-  console.log(`${arguments["0"]} ${arguments["1"]}`);
+const greeting2 = function() {
+  console.log(`${arguments["0"]}`);
 };
 
-greeting("Morning", "Louisa");
+let who = prompt("What is your name?");
+
+greeting2("Morning " + who);
