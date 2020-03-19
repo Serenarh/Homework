@@ -1,9 +1,12 @@
-// TODO: Update 👆🏽by using `prompt` to get the user's name.
+// TODO: Create an OBJECT 'greeterDB' that will 🏠 the 'data' as per 👆🏽.
 
-const greeting2 = function() {
+const greeterDB = {};
+
+greeterDB.greeting = "Morning";
+greeterDB.who = prompt("What is your name?");
+
+const greeterDB2 = function() {
   console.log(`${arguments["0"]}`);
 };
 
-let who = prompt("What is your name?");
-
-greeting2("Morning " + who);
+greeterDB2(greeterDB.greeting + " " + greeterDB.who);
